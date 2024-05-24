@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #1e3a8a; /* Dark blue background */
     color: #fff;
     padding: 10px 0;
     position: fixed;
@@ -62,7 +62,7 @@ header nav ul li a:hover {
 }
 
 #hero .btn {
-    background: #333;
+    background: #f0a500;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -72,12 +72,13 @@ header nav ul li a:hover {
 }
 
 #hero .btn:hover {
-    background: #f0a500;
+    background: #333;
 }
 
 #about, #services, #team, #contact {
     padding: 50px 20px;
     text-align: center;
+    background-color: #e5e7eb; /* Light gray background */
 }
 
 #services .services, #team .team-members {
@@ -125,7 +126,7 @@ header nav ul li a:hover {
 }
 
 #contact .btn {
-    background: #333;
+    background: #1e3a8a;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -139,7 +140,7 @@ header nav ul li a:hover {
 }
 
 footer {
-    background: #333;
+    background: #1e3a8a;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -164,7 +165,4 @@ footer {
         margin: 10px 0;
     }
     #hero {
-        padding: 60px 20px;
-        margin-top: 50px;
-    }
-}
+        padding: 60px
