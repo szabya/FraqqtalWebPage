@@ -30,7 +30,7 @@ header .container {
 }
 
 header .logo {
-    height: 70px; /* Increased size */
+    height: 80px; /* Increased size for larger logo */
     margin-right: 20px;
 }
 
@@ -39,6 +39,7 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center; /* Center nav items vertically */
 }
 
 header nav ul li {
@@ -48,6 +49,7 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 18px; /* Increased font size */
     transition: color 0.3s;
 }
 
@@ -62,13 +64,13 @@ header nav ul li a:hover {
     color: #fff;
     padding: 100px 20px;
     text-align: center;
-    margin-top: 100px; /* Adjusted for larger header */
+    margin-top: 120px; /* Adjusted for larger header */
 }
 
 #hero .btn {
     background: #f0a500;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Increased padding for button */
     text-decoration: none;
     margin-top: 20px;
     display: inline-block;
@@ -167,10 +169,4 @@ header nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-#contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-#contact label {
+#
