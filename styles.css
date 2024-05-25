@@ -16,7 +16,7 @@ body {
 header {
     background: #1e3a8a; /* Dark blue background */
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0; /* Increased padding for larger logo */
     position: fixed;
     width: 100%;
     top: 0;
@@ -30,7 +30,7 @@ header .container {
 }
 
 header .logo {
-    height: 50px; /* Adjust size as needed */
+    height: 70px; /* Increased size */
     margin-right: 20px;
 }
 
@@ -62,7 +62,7 @@ header nav ul li a:hover {
     color: #fff;
     padding: 100px 20px;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 100px; /* Adjusted for larger header */
 }
 
 #hero .btn {
@@ -174,10 +174,3 @@ header nav ul li a:hover {
 }
 
 #contact label {
-    display: block;
-    margin-top: 10px;
-}
-
-#contact input, #contact textarea {
-    width: 
-
