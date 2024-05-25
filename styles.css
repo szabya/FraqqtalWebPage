@@ -165,4 +165,7 @@ footer {
         margin: 10px 0;
     }
     #hero {
-        padding: 60px
+        padding: 60px 20px;
+        margin-top: 50px;
+    }
+}
