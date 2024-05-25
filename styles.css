@@ -29,8 +29,9 @@ header .container {
     align-items: center;
 }
 
-header h1 {
-    margin: 0;
+header .logo {
+    height: 50px; /* Adjust size as needed */
+    margin-right: 20px;
 }
 
 header nav ul {
@@ -177,4 +178,5 @@ header nav ul li a:hover {
     margin-top: 10px;
 }
 
-#contact input, #contact textarea
+#contact input, #contact textarea {
+    width: 
