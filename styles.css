@@ -27,6 +27,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allow wrapping */
 }
 
 header .logo {
@@ -169,4 +170,69 @@ header nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-#
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact label {
+    display: block;
+    margin-top: 10px;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+#contact .btn {
+    background: #1e3a8a;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+#contact .btn:hover {
+    background: #f0a500;
+}
+
+footer {
+    background: #1e3a8a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li {
+        margin: 10px 0;
+    }
+    header .logo {
+        height: 60px; /* Adjusted size for smaller screens */
+        margin-bottom: 10px;
+    }
+    #services .service, #team .team-member {
+        width: 100%;
+        margin: 10px 0;
+    }
+    #hero {
+        padding: 60px 20px;
+        margin-top: 100px;
+    }
+}
