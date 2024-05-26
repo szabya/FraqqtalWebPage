@@ -144,13 +144,13 @@ header nav ul li a:hover {
     background-color: #e5e7eb; /* Light gray background */
 }
 
-#services .services, #team .team-members {
+#services .services {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-#services .service, #team .team-member {
+#services .service {
     width: 30%;
     margin: 10px 0;
     background: #fff;
@@ -159,13 +159,18 @@ header nav ul li a:hover {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-#services .service:hover, #team .team-member:hover {
+#services .service:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
+#team .team-member {
+    text-align: center;
+    margin: 20px 0;
+}
+
 #team .team-member img {
-    width: 100%;
+    width: 150px; /* Adjust size as needed */
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -227,7 +232,7 @@ footer {
         height: 60px; /* Adjusted size for smaller screens */
         margin-bottom: 10px;
     }
-    #services .service, #team .team-member {
+    #services .service {
         width: 100%;
         margin: 10px 0;
     }
