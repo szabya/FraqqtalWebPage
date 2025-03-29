@@ -1174,4 +1174,17 @@ footer {
     font-size: 0.9rem;
     color: #666;
     margin-top: 15px;
+}
+
+.stat-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.stat-box:hover .stat-icon {
+    transform: scale(1.1);
 } 
