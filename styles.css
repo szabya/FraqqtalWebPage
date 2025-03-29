@@ -230,16 +230,6 @@ section:nth-child(odd) {
     background-color: var(--light-background);
 }
 
-.section-number {
-    font-size: 5rem;
-    font-weight: 800;
-    color: rgba(59, 35, 166, 0.1);
-    position: absolute;
-    top: 4rem;
-    left: 2rem;
-    line-height: 1;
-}
-
 /* About Section */
 .about-content {
     display: grid;
@@ -802,9 +792,13 @@ footer {
     }
     
     .section-number {
-        font-size: 3rem;
-        top: 2rem;
+        font-size: 5rem;
+        position: relative;
+        top: 1rem;
         left: 1rem;
+        margin-bottom: 1rem;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.05);
     }
     
     .footer-logo img {
@@ -852,7 +846,16 @@ footer {
     
     /* Adjust content sections */
     section {
-        padding: 3rem 0;
+        padding: 2rem 1rem;
+    }
+    
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+    
+    h2 {
+        margin-top: 0;
     }
     
     .contact-info {
@@ -938,6 +941,13 @@ footer {
     
     .large-heading {
         font-size: 1.8rem;
+    }
+    
+    .section-number {
+        font-size: 3.5rem;
+        margin-bottom: 0.5rem;
+        left: 0.5rem;
+        top: 0.5rem;
     }
 }
 
