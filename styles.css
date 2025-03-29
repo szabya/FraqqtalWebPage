@@ -363,22 +363,82 @@ section:nth-child(odd) {
 
 /* Contact Section */
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    margin-top: 3rem;
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .contact-info {
-    padding-right: 2rem;
+    flex: 1;
+    min-width: 300px;
 }
 
-.contact-details {
-    margin: 2rem 0;
+.contact-direct {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.contact-details p {
-    margin-bottom: 0.75rem;
+.contact-direct-inner {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    width: 100%;
+}
+
+.contact-direct h3 {
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+.email-display {
+    margin: 25px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+    transition: all 0.3s ease;
+}
+
+.email-display:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.email-display i {
+    font-size: 0.9rem;
+    margin-right: 12px;
+    color: #005fff;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.email-display a {
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.email-display a:hover {
+    color: #005fff;
+}
+
+.response-note {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 15px;
 }
 
 /* vCard Download Styling */
@@ -819,6 +879,15 @@ footer {
     /* Ensure scrolling is smooth */
     html, body {
         -webkit-overflow-scrolling: touch;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+    }
+    
+    .contact-info,
+    .contact-direct {
+        width: 100%;
     }
 }
 
