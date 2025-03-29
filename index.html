@@ -38,8 +38,8 @@
 
     <section class="hero">
         <div class="container">
-            <h1 class="large-heading">Next-Gen Technology Solutions</h1>
-            <p class="hero-subtitle">We harness AI, Blockchain, DeFi, and Quantum Computation to deliver cutting-edge solutions and redefine what's possible in the rapidly evolving digital landscape.</p>
+            <h1 class="large-heading">Innovation Through Next-Gen Technology</h1>
+            <p class="hero-subtitle">We harness AI, Blockchain, DeFi, and Quantum Computation to deliver cutting-edge solutions and redefine what's possible in a rapidly evolving digital landscape.</p>
         </div>
     </section>
 
@@ -200,15 +200,15 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form>
+                    <form action="https://formsubmit.co/dearest.66-severe@icloud.com" method="POST">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <select>
+                            <select name="service">
                                 <option value="" disabled selected>Select a Service</option>
                                 <option value="consulting">Strategic consulting in AI, Quantum Computing and DeFi</option>
                                 <option value="product">Product Development</option>
@@ -217,8 +217,14 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                         </div>
+                        <!-- Anti-spam honeypot field -->
+                        <input type="text" name="_honey" style="display:none">
+                        <!-- Disable captcha -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- Custom redirect after submission -->
+                        <input type="hidden" name="_next" value="https://fraqqtal.com?submitted=true">
                         <button type="submit" class="cta-button">Send Message</button>
                     </form>
                 </div>

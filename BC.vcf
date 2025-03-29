@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+KIND:individual
+FN:Dr. Janos Gyarmati-Szabo
+N:Gyarmati-Szabo;Janos;;Dr.;
+ORG:Fraqqtal
+TITLE:Founder & CEO, Inventor in AI
+TEL;TYPE=cell,voice:+41 76 476 04 37
+EMAIL;TYPE=internet:j.gyarmati-szabo@fraqqtal.com
+URL;TYPE=work:https://www.fraqqtal.com
+item1.URL:https://www.linkedin.com/in/janos-gyarmati-szabo-ph-d-9a334825
+item1.X-ABLabel:LinkedIn
+END:VCARD
+
+
+

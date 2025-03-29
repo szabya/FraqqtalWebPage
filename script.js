@@ -274,11 +274,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
             // Simple validation example
             let isValid = true;
-            const formInputs = contactForm.querySelectorAll('input, textarea');
+            const formInputs = contactForm.querySelectorAll('input:not([type="hidden"]), textarea, select');
             
             formInputs.forEach(input => {
                 if (input.hasAttribute('required') && !input.value.trim()) {
@@ -298,32 +296,38 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
             
-            if (isValid) {
-                // Here you would typically submit the form via AJAX
-                // For this example, we'll just show a success message
-                
-                // Hide the form
-                contactForm.style.display = 'none';
-                
-                // Create and show success message
-                const successMessage = document.createElement('div');
-                successMessage.className = 'success-message';
-                successMessage.innerHTML = `
-                    <i class="fas fa-check-circle"></i>
-                    <h3>Message Sent!</h3>
-                    <p>Thank you for contacting us. We'll get back to you soon.</p>
-                `;
-                
-                contactForm.parentNode.appendChild(successMessage);
+            if (!isValid) {
+                e.preventDefault(); // Only prevent submission if validation fails
             }
+            // If valid, let the form submit naturally to FormSubmit
         });
         
         // Remove error class on input focus
-        const formInputs = contactForm.querySelectorAll('input, textarea');
+        const formInputs = contactForm.querySelectorAll('input, textarea, select');
         formInputs.forEach(input => {
             input.addEventListener('focus', function() {
                 this.classList.remove('error');
             });
         });
+    }
+    
+    // Check for form submission success (returned from FormSubmit redirect)
+    if (window.location.search.includes('submitted=true')) {
+        const contactForm = document.querySelector('.contact-form form');
+        if (contactForm) {
+            // Hide the form
+            contactForm.style.display = 'none';
+            
+            // Create and show success message
+            const successMessage = document.createElement('div');
+            successMessage.className = 'success-message';
+            successMessage.innerHTML = `
+                <i class="fas fa-check-circle"></i>
+                <h3>Message Sent!</h3>
+                <p>Thank you for contacting us. We'll get back to you soon.</p>
+            `;
+            
+            contactForm.parentNode.appendChild(successMessage);
+        }
     }
 }); 
