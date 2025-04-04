@@ -449,23 +449,24 @@ section:nth-child(odd) {
 .address-display {
     margin: 25px 0;
     padding: 15px;
-    background-color: #fff;
+    background-color: #fff !important;
     border-radius: 6px;
-    display: inline-flex;
+    display: inline-flex !important;
     align-items: center;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.03) !important;
     transition: all 0.3s ease;
+    width: auto;
 }
 
 .address-display:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
 }
 
 .address-display i {
     font-size: 0.9rem;
     margin-right: 12px;
-    color: #005fff;
+    color: #005fff !important;
     line-height: 1;
     vertical-align: middle;
 }
