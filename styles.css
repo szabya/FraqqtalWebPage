@@ -446,6 +446,38 @@ section:nth-child(odd) {
     color: #005fff;
 }
 
+.address-display {
+    margin: 25px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+    transition: all 0.3s ease;
+}
+
+.address-display:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.address-display i {
+    font-size: 0.9rem;
+    margin-right: 12px;
+    color: #005fff;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.address-display span {
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1;
+    vertical-align: middle;
+}
+
 .response-note {
     font-size: 0.9rem;
     color: #666;
